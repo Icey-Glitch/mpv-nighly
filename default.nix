@@ -1,10 +1,10 @@
-{ lib, buildPackages, fetchurl, stdenv }:
+{ lib, buildPackages, fetchurl, stdenv, fetchFromGitHub }:
 
 buildPackages.mpv.overrideAttrs (oldAttrs: {
 
     version = "mpv-nightly";
 
-    src = pkgs.fetchFromGitHub {
+    src = fetchFromGitHub {
         owner = "mpv-player";
         repo = "mpv";
     };
