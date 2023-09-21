@@ -1,4 +1,4 @@
-{config, lib, pkg-config, ...}:
+{config, lib, pkg-config, pkgs, ...}:
 
 pkgs.mpv.overrideAttrs (old: {
     version = old.version + "-nightly";
