@@ -1,4 +1,4 @@
-{ lib, buildPackages, stdenv, fetchFromGitHub }:
+{ lib, buildPackages, stdenv, fetchFromGitHub, ... }:
 
 buildPackages.mpv.overrideAttrs (oldAttrs: {
 
