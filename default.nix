@@ -2,13 +2,11 @@
 
 buildPackages.mpv.overrideAttrs (oldAttrs: {
 
-    version = old.version + "-nightly";
+    version = "mpv-nightly";
 
     src = pkgs.fetchFromGitHub {
         owner = "mpv-player";
         repo = "mpv";
-        rev = ""; # can be commit hash/tag name
-        hash = "";
     };
 
     meta = with oldAttrs.meta; {
